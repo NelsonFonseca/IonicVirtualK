@@ -1,10 +1,33 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      VirtualK
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+    <ion-card class="welcome-card">
+      <img src="https://virtual.konradlorenz.edu.co/pluginfile.php/162819/course/overviewfiles/31628.jpg" alt="" />
+      <ion-card-header>
+        <ion-card-subtitle>Fundación Universitaria Konrad Lorenz</ion-card-subtitle>
+        <ion-card-title>Aulas Virtuales</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Aquí realizaremos una aplicación hecha en ionic donde iremos mejorando. Con el tiempo manejaremos Flutter y Android Studio.</p>
+      </ion-card-content>
+    </ion-card>
+    <ion-list lines="none">
+      <ion-list-header>
+        <ion-label>Ingresar</ion-label>
+      </ion-list-header>
+      <ion-item (click)="openLoginStudent()">
+        <ion-icon slot="start" color="medium" name="book"></ion-icon>
+        <ion-label>Estudiante</ion-label>
+      </ion-item>
+      <ion-item (click)="openLoginTeacher()">
+        <ion-icon slot="start" color="medium" name="briefcase"></ion-icon>
+        <ion-label>Docente</ion-label>
+      </ion-item>
+    </ion-list>
 </ion-content>

@@ -18,6 +18,7 @@ const routes: Routes = [
   { path: 'deliveries-teacher', loadChildren: './users/teacher/deliveries-teacher/deliveries-teacher.module#DeliveriesTeacherPageModule' },
   { path: 'workshops-teacher', loadChildren: './users/teacher/workshops-teacher/workshops-teacher.module#WorkshopsTeacherPageModule' },
   { path: 'ovas-teacher', loadChildren: './users/teacher/ovas-teacher/ovas-teacher.module#OvasTeacherPageModule' },
+  { path: 'modal', loadChildren: './modal/modal.module#ModalPageModule' },
 ];
 
 @NgModule({

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from "@ionic/angular";
 
 @Component({
   selector: 'app-login-student',
@@ -7,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginStudentComponent implements OnInit {
 
-  constructor() { }
+  constructor(private modal : ModalController) { }
 
   ngOnInit() {}
+
+  closeWindow(){
+    this.modal.dismiss();
+  }
 
 }
